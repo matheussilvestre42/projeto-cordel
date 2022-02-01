@@ -1,16 +1,26 @@
 @charset "UTF-8";
+
+/*Import das fontes utilizadas no site*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+/*Criação de váriaveis*/
 :root{
     --fontTitulo: 'Passion One', cursive;
     --fontVersos: 'Sriracha', cursive;
 }
+
+/*Configurações gerais do site*/
 *{
     margin: 0px;
     padding: 0px;
     
 }
+section,header{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.308);
+}
+
+/*Configurações do Header*/
 .titulo{
     background-color: black;
     padding: 55.5px;
@@ -40,6 +50,9 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+/*Configurações do main*/
+
 pre{
     font-family: var(--fontVersos);
     font-size: 3.5vw;
@@ -73,6 +86,8 @@ pre{
 .conteudo pre{
     margin-left: -4.5vw;
 }
+
+/*Configurações do footer*/
 footer{
     background-color: black;
     color: white;
