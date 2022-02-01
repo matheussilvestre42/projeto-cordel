@@ -8,39 +8,36 @@
 :root{
     --fontTitulo: 'Passion One', cursive;
     --fontVersos: 'Sriracha', cursive;
+    --fontNormal: Verdana, Geneva, Tahoma, sans-serif
+    
 }
 
 /*Configurações gerais do site*/
 *{
     margin: 0px;
     padding: 0px;
+    font-family: var(--fontNormal);
     
 }
-section,header{
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.308);
+body{
+    min-height: 100vh;
 }
 
 /*Configurações do Header*/
 .titulo{
     background-color: black;
-    padding: 55.5px;
     color: white;
     text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.308);
 }
-.titulo h1{
+.titulo>h1{
     font-family: var(--fontTitulo);
-    font-size: 7vw;
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding-top: 50px;
 }
-.titulo h1::first-letter{
-    font-size: 1.3em;
-}
-span {
-    font-size: 1.3em;
-}
-.titulo p{
-    font-family: sans-serif;
-    font-weight: lighter;
-    font-size: 1.1em;
+.titulo>p{
+    padding-bottom: 50px;
 }
 a{
     text-decoration: none;
@@ -55,44 +52,42 @@ a:hover{
 
 pre{
     font-family: var(--fontVersos);
-    font-size: 3.5vw;
+    font-size: 3.4vw;
+    line-height: 2em;
+    padding: 10vh 0vh 10vh 30px;
 }
-.versoSimples pre{
-    padding-top: 70px;
-    padding-bottom: 80px;
-    margin-left: -3vw;
-}
-#conteiner1{
-    background: black url("../imagens/background001.jpg") center center no-repeat fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    padding: 50px 0px
-}
-#conteiner2{
-    background: black url("../imagens/background002.jpg") center center no-repeat fixed;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    padding: 50px 0px;
-}
-.conteudo{
-    width: 50vw;
-    height: 50vw;
-    background-color: rgba(0, 0, 0, 0.541);
+
+.versoImagem{
+    background-color: rgb(36, 36, 36);
     color: white;
-    margin-left: 2.5vw;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
-.conteudo pre{
-    margin-left: -4.5vw;
+
+.versoImagem > pre{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
+#img1{
+    background: black url("../imagens/background001.jpg") right center;
+    padding: 4vh;
+    background-size: cover;
+}
+#img2{
+    background: black url("../imagens/background002.jpg") center center;
+    padding: 4vh;
+}
+
 
 /*Configurações do footer*/
 footer{
     background-color: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 1.5vw;
-    padding: 5px;
+    font-size: 2vw;
+    padding: 10px;
 }
