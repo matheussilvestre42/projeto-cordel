@@ -24,43 +24,60 @@
 .titulo h1::first-letter{
     font-size: 1.3em;
 }
+span {
+    font-size: 1.3em;
+}
 .titulo p{
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 1.1em;
 }
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
 pre{
     font-family: var(--fontVersos);
     font-size: 3.5vw;
-    padding-left: 30px;
 }
 .versoSimples pre{
     padding-top: 70px;
     padding-bottom: 80px;
+    margin-left: -3vw;
 }
 #conteiner1{
-    position: relative;
-    max-width: 100%;
-    min-height: 400px;
-    max-height: 1000px;
     background: black url("../imagens/background001.jpg") center center no-repeat fixed;
     background-size: cover;
-}
-.conteudo{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.418);
-    color: white;
-    max-height: 680px;
-    min-height: 300px;
-    margin-top: 40px; ;
-    left: 2%;
-
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px
 }
 #conteiner2{
-    position: relative;
-    max-width: 100%;
-    min-height: 400px;
-    max-height: 1000px;
     background: black url("../imagens/background002.jpg") center center no-repeat fixed;
     background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+}
+.conteudo{
+    width: 50vw;
+    height: 50vw;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    margin-left: 2.5vw;
+}
+.conteudo pre{
+    margin-left: -4.5vw;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
 }
